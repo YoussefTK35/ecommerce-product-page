@@ -1,44 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="A page dedicated for those who want to buy sneakers online."
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header>
+      <!-- logo -->
+      <a href="#"
+        ><img src="/images/logo.svg" alt="sneakers" width="138" height="20"
+      /></a>
+      <!-- navigation bar -->
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/">Collection</a></li>
+          <li><a href="/">Men</a></li>
+          <li><a href="/">Women</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- icons : cart + profile -->
+      <div class="profile-container">
+        <button id="basket-button">
+          <img
+            src="/images/icon-cart.svg"
+            alt="basket cart"
+            width="22"
+            height="20"
+          />
+        </button>
+        <button id="profile-button">
+          <img
+            src="/images/image-avatar.png"
+            alt="profile"
+            width="100"
+            height="100"
+          />
+        </button>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <!-- large product and thumbnails -->
+      <div class="product-container">
+        <!-- main product -->
+        <button id="large-product-button">
+          <img
+            src="/images/image-product-1.jpg"
+            alt="sneakers"
+            width="1000"
+            height="1000"
+          />
+        </button>
+        <!-- thumbnails -->
+        <div class="thumbnails-container">
+          <button class="thumbnail">
+            <img
+              src="/images/image-product-1-thumbnail.jpg"
+              alt="sneakers thumbnail 1"
+              width="176"
+              height="176"
+            />
+          </button>
+          <button class="thumbnail">
+            <img
+              src="/images/image-product-2-thumbnail.jpg"
+              alt="sneakers thumbnail 2"
+              width="176"
+              height="176"
+            />
+          </button>
+          <button class="thumbnail">
+            <img
+              src="/images/image-product-3-thumbnail.jpg"
+              alt="sneakers thumbnail 3"
+              width="176"
+              height="176"
+            />
+          </button>
+          <button class="thumbnail">
+            <img
+              src="/images/image-product-4-thumbnail.jpg"
+              alt="sneakers thumbnail 4"
+              width="176"
+              height="176"
+            />
+          </button>
+        </div>
+      </div>
+      <!-- main content and purshase controls -->
+      <div class="controls-container">
+        <h2>SNEAKER COMPANY</h2>
+        <h1>Fall limited Edition Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-container">
+          <span id="current-price">$125.00</span>
+          <span id="discount">50%</span>
+          <span id="previous-price">$250.00</span>
+        </div>
+        <div class="controls">
+          <div class="quantity-container">
+            <button id="minus-button">
+              <img
+                src="/images/icon-minus.svg"
+                alt="minus"
+                width="12"
+                height="4"
+              />
+            </button>
+            <span id="quantity">0</span>
+            <button id="plus-button">
+              <img
+                src="/images/icon-plus.svg"
+                alt="plus"
+                width="12"
+                height="12"
+              />
+            </button>
+          </div>
+          <button id="add-to-cart">
+            <img
+              src="/images/icon-cart.svg"
+              alt="basket"
+              width="22"
+              height="20"
+            />
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
