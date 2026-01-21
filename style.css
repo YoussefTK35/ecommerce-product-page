@@ -20,3 +20,59 @@
     format("truetype");
   font-display: swap;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: min(5rem, 10vw);
+  padding: min(4rem, 8vw) min(2rem, 4vw);
+  font-family: kumbhSans, sans-serif, Arial;
+  font-weight: 400;
+  background-color: var(--light-grayish-blue);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: min(3rem, 6vw);
+  width: min(70rem, 100%);
+  border-bottom: 1px solid var(--grayish-blue);
+  padding-bottom: min(2rem, 5vw);
+
+  a {
+    padding: min(0.5rem, 1vw) 0;
+  }
+
+  nav {
+    margin-left: min(3rem, 6vw);
+    margin-right: auto;
+
+    ul {
+      list-style: none;
+      display: flex;
+      li a {
+        text-decoration: none;
+        padding: min(0.5rem, 1vw) min(1rem, 2vw);
+        color: var(--dark-grayish-blue);
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: min(3rem, 6vw);
+
+    button {
+      border: none;
+      background-color: var(--light-grayish-blue);
+      padding: min(0.5rem, 1vw);
+
+      img[alt="profile"] {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+}
